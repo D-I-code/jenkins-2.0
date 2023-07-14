@@ -27,9 +27,7 @@ docker run -d \
     trio-task-flask-app:latest
 
 # run the nginx container
-docker run -d \ 
-    --name nginx \
-    -p 80:80 \
+docker run -d -p 80:80 --name nginx  \
     --network trio-task-network \
     --mount type=bind,source=$(pwd)/nginx/nginx.conf,target=/etc/nginx/nginx.conf \
     nginx:latest
