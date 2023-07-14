@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # remove renning containers
-docker rm -f $(docker ps -qa)
+docker rm -f $(docker ps -aq)
 
 # create a network
 docker network create trio-task1-network
