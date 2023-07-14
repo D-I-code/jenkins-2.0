@@ -31,7 +31,7 @@ docker run -d \
     --name nginx \
     -p 80:80 \
     --network trio-task-network \
-    --mount type=bind,source=$(pwd)/nginx/ngin.conf,target=/etc/nginx/nginx.conf \
+    --mount type=bind,source=$(pwd)/nginx/nginx.conf,target=/etc/nginx/nginx.conf \
     nginx:latest
 
 # show running containers
