@@ -4,7 +4,7 @@
 docker rm -f $(docker ps -aq)
 
 # create a network
-docker network create trio-task1-network
+docker network create trio-task-network
 
 # create a volume
 docker volume create new-volume
